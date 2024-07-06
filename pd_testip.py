@@ -14,7 +14,6 @@ def allocate_address(allowed_regions, region_name, domain, address):
     c2_client = None
 
     # We do not attempt GLOBAL IPs, Gov Cloud IPs, or any region we do not have perms
-    #if region_name != 'GLOBAL' and "us-gov" not in region_name:
     if region_name in allowed_regions:
         ec2_client = boto3.client('ec2', region_name=region_name)
     else:
