@@ -73,8 +73,8 @@ options:
 # Logging
 
 The `pd_spf.py` log files are CSVs:
-* domain-ip-YYYY-MM-DD_HH-MM-SS.csv - This log file contains indivdual IP address entries in the SPF record. 
-* domain-cidr-YYYY-MM-DD_HH-MM-SS.csv - This log file contains individual IP addresses and expanded CIDR block that are contained in the SPF record. This file is much longer than the IP address-only log file. Testing these IPs can take a lot more time. 
+* `domain-ip-YYYY-MM-DD_HH-MM-SS.csv` - This log file contains indivdual IP address entries in the SPF record. 
+* `domain-cidr-YYYY-MM-DD_HH-MM-SS.csv` - This log file contains individual IP addresses and expanded CIDR block that are contained in the SPF record. This file is much longer than the IP address-only log file. Testing these IPs can take a lot more time. 
 
 Both log files contain the same elements: 
 * IP Address
@@ -96,8 +96,8 @@ python pd_spf.py --domain example.com
 ```
 
 If IP addresses in the SPF record are hosted in AWS, they will be populated in the following log files:
-* example.com-ip-YYYY-MM-DD_HH-MM-SS.csv
-* example.com-cidr-YYYY-MM-DD_HH-MM-SS.csv
+* `example.com-ip-YYYY-MM-DD_HH-MM-SS.csv`
+* `example.com-cidr-YYYY-MM-DD_HH-MM-SS.csv`
 
 Run `pd_testip.py`, feeding in one of the two log files to attempt to allocate one of the AWS Elastic IP addresses in the SPF record. The IP address log file will likely have many less entries than the CIDR log file. The CIDR log file could take some time to run through. Below is an example of running `pd_testip.py`:
 
