@@ -73,8 +73,8 @@ options:
 # Logging
 
 The `pd_spf.py` log files are CSVs:
-* <domain>-ip-YYYY-MM-DD_HH-MM-SS.csv - This log file contains indivdual IP address entries in the SPF record. 
-* <domain>-cidr-YYYY-MM-DD_HH-MM-SS.csv - This log file contains individual IP addresses and expanded CIDR block that are contained in the SPF record. This file is much longer than the IP address-only log file. Testing these IPs can take a lot more time. 
+* domain-ip-YYYY-MM-DD_HH-MM-SS.csv - This log file contains indivdual IP address entries in the SPF record. 
+* domain-cidr-YYYY-MM-DD_HH-MM-SS.csv - This log file contains individual IP addresses and expanded CIDR block that are contained in the SPF record. This file is much longer than the IP address-only log file. Testing these IPs can take a lot more time. 
 
 Both log files contain the same elements: 
 * IP Address
