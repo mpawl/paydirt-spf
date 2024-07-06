@@ -57,7 +57,7 @@ options:
   --domain DOMAIN  Domain to test.
 ```
 
-Each run of `pd_spf.py` will download the JSON file containing the list of all AWS IP addresses hosted by AWS [here](https://ip-ranges.amazonaws.com/ip-ranges.json). 
+Each run of `pd_spf.py` will download the JSON file containing the list of all AWS IP addresses hosted by AWS [here](https://ip-ranges.amazonaws.com/ip-ranges.json). This file contains address blocks and the region and service the address block is assigned to. This is important because users must specify the appropriate region when when requesting a specific Elastic IP. The IP address also must not belong to an AWS infrastructure service. 
 
 
 Below is the help screen for `pd_testip.py`, detailing the command line options. 
