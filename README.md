@@ -105,4 +105,7 @@ Run `pd_testip.py`, feeding in one of the two log files to attempt to allocate o
 python pd_testip.py --log example.com-ip-YYYY-MM-DD_HH-MM-SS.csv
 ```
 
+# Notes
+
+There is some IPv6 logging functionality started in `pd_spf.py`, however there are not yet Elastic IPv6 IPs and may never be. 
 
